@@ -1,0 +1,123 @@
+/* Import Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+* {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.425);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+nav .nav-left {
+  margin-left: 50px;
+}
+
+nav .nav-left a {
+  margin-right: 50px;
+}
+
+nav .nav-left a:hover {
+  font-weight: bolder;
+}
+
+nav .nav-right a {
+  margin-right: 50px;
+  background-color: black;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+nav .nav-right a:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+/* Section */
+.container {
+  max-width: 1000px;
+  box-shadow: 5px 5px 5px 5px #888888;
+  margin: 90px auto;
+  display: flex;
+  padding: 50px;
+}
+
+.container .left-card {
+  flex: 60%;
+}
+
+.container .right-card {
+  flex: 40%;
+  margin-left: 20px;
+}
+
+.container .right-card .card-profile {
+  width: 100%;
+  box-shadow: 2px 2px 2px 2px rgb(115, 115, 115);
+  border-radius: 15px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.right-card .card-profile img {
+  width: 100%;
+  border-radius: 15px 15px 0px 0;
+}
+
+.container .left-card .download {
+  display: flex;
+  align-items: center;
+
+}
+
+.download a{
+  margin-right: 20px;
+}
+
+.download .btn-contact {
+  background-color: black;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 15px;
+
+}
+
+.download .btn-contact:hover {
+  background-color:rgb(255, 0, 0);
+}
+
+.download .fa-download {
+  margin-left: 10px;
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media a {
+  font-size: 40px;
+  margin-right: 20px;
+}
+

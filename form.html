@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css">
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <nav>
+        <ul class="nav-left">
+        <a href="#"><img src="images/logo1.png" alt="" /></a>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">My Project</a></li>
+        </ul>
+        <ul class="nav-right">
+          <li><a href="form.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    <form action="">
+      <div>
+        <label for="input-name">Name</label>
+        <input id="input-name" height="100" type="text" required />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" required />
+      </div>
+      <div>
+        <label for="input-phone">Handphone</label>
+        <input id="input-phone" type="number" required/>
+      </div>
+      <div>
+        <label for="input-subject">Subject</label>
+        <select name="subject" id="input-subject" required>
+          <option value="" hidden>Select</option>
+          <option value="">Frontend</option>
+          <option value="">Backend</option>
+          <option value="">Fullstack</option>
+        </select>
+      </div>
+      <div>
+        <label for="input-message">Your Message</label>
+        <textarea name="" id="input-message" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <button>SUBMIT</button>
+      </div>
+    </form>
+  </body>
+</html>
