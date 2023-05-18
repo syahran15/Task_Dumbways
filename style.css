@@ -10,16 +10,17 @@ body {
   padding: 0;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  /* height: 1000px; */
 }
 
 nav {
-  padding: 20px;
   background-color: rgba(128, 128, 128, 0.425);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  top: 0;
+  position: sticky;
 }
-
 
 nav ul li {
   display: inline-block;
@@ -33,10 +34,16 @@ nav ul li a {
 
 nav .nav-left {
   margin-left: 50px;
+  align-items: center;
+  display: flex;
 }
 
 nav .nav-left a {
   margin-right: 50px;
+}
+
+nav .nav-left a img {
+  width: 50px;
 }
 
 nav .nav-left a:hover {
@@ -48,7 +55,7 @@ nav .nav-right a {
   background-color: black;
   color: #fff;
   padding: 5px 15px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 nav .nav-right a:hover {

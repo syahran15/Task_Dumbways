@@ -1,90 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 body {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  /* height: 1000px; */
+}
 
 nav {
-    padding: 20px;
-    background-color: rgba(128, 128, 128, 0.425);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  
-  nav ul li {
-    display: inline-block;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-  }
-  
-  nav .nav-left {
-    margin-left: 50px;
-  }
-  
-  nav .nav-left a {
-    margin-right: 50px;
-  }
-  
-  nav .nav-left a:hover {
-    font-weight: bolder;
-  }
-  
-  nav .nav-right a {
-    margin-right: 50px;
-    background-color: black;
-    color: #fff;
-    padding: 5px 15px;
-    border-radius: 10px;
-  }
-  
-  nav .nav-right a:hover {
-    background-color: rgb(255, 0, 0);
-  }
+  background-color: rgba(128, 128, 128, 0.425);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  position: sticky;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+nav .nav-left {
+  margin-left: 50px;
+  align-items: center;
+  display: flex;
+}
+
+nav .nav-left a {
+  margin-right: 50px;
+}
+
+nav .nav-left a img {
+  width: 50px;
+}
+
+nav .nav-left a:hover {
+  font-weight: bolder;
+}
+
+nav .nav-right a {
+  margin-right: 50px;
+  background-color: black;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+nav .nav-right a:hover {
+  background-color: rgb(255, 0, 0);
+}
 
 form {
-    width: 600px;
-    margin: 50px auto;
-    padding: 20px;
+  width: 600px;
+  margin: 50px auto;
+  padding: 20px;
 }
 
 form div {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 label {
-    font-weight: bold;
-    font-size: 20px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-input, select, textarea {
-  box-shadow: 2px 2px 2px gray;
-    background-color: #fff;
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 10px;
-    border: 1px solid gray;
-    outline: none;
+input,
+select,
+textarea {
+  box-shadow: 1px 1px 1px 2px gray;
+  background-color: #fff;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
 }
 
 button {
-    background-color: orangered;
-    color: white;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 10px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
 }
 
 button:hover {
-    background-color: rgb(255, 0, 0);
-    cursor: pointer;
+  background-color: rgb(255, 0, 0);
+  cursor: pointer;
 }
