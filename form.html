@@ -32,8 +32,8 @@
         <input id="input-name" height="100" type="text" required />
       </div>
       <div>
-        <label for="email">Email</label>
-        <input id="email" type="email" required />
+        <label for="input-email">Email</label>
+        <input id="input-email" type="email" required />
       </div>
       <div>
         <label for="input-phone">Handphone</label>
@@ -43,9 +43,9 @@
         <label for="input-subject">Subject</label>
         <select name="subject" id="input-subject" required>
           <option value="" hidden>Select</option>
-          <option value="">Frontend</option>
-          <option value="">Backend</option>
-          <option value="">Fullstack</option>
+          <option>Frontend</option>
+          <option>Backend</option>
+          <option>Fullstack</option>
         </select>
       </div>
       <div>
@@ -53,8 +53,10 @@
         <textarea name="" id="input-message" cols="30" rows="10"></textarea>
       </div>
       <div>
-        <button>SUBMIT</button>
+        <button type="button" onclick="submitData()">SUBMIT</button>
       </div>
     </form>
+
+    <script src="form.js"></script>
   </body>
 </html>
