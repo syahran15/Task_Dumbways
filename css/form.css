@@ -1,0 +1,40 @@
+form {
+  width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+form div {
+  margin-top: 15px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input,
+select,
+textarea {
+  box-shadow: 1px 1px 1px 2px gray;
+  background-color: #fff;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+button {
+  background-color: orangered;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: rgb(255, 0, 0);
+  cursor: pointer;
+}

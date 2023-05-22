@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/blog.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-left">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="assets/images/dumbways.png" alt=""
+          /></a>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">My Project</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="nav-right">
+          <li><a href="form.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Content Form -->
+    <section class="section-blog">
+      <div class="blog">
+        <h1>ADD MY PROJECT</h1>
+        <div class="blog-form">
+          <div class="form-container">
+            <form onsubmit="addBlog(event)">
+              <div class="project-name">
+                <label for="input-project-name" class="title"
+                  >Project Name</label
+                >
+                <input type="text" id="input-project-name" />
+              </div>
+              <div class="date-container">
+                <div class="start-date">
+                  <label for="input-start-date" class="title">Start Date</label>
+                  <input type="date" id="input-start-date" />
+                </div>
+                <div class="end-date">
+                  <label for="input-end-date" class="title">End Date</label>
+                  <input type="date" id="input-end-date" />
+                </div>
+              </div>
+              <div>
+                <label for="input-description" class="title">Description</label>
+                <textarea
+                  name=""
+                  id="input-description"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <div class="checkbox">
+                <label for="" class="title">Technologies</label>
+                <div class="checkbox-container">
+                  <div class="checkbox-left">
+                    <div>
+                      <input type="checkbox" id="input-nodejs" />
+                      <label for="input-nodeJS">Node JS</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="input-reactJS" />
+                      <label for="input-reactJS">React JS</label>
+                    </div>
+                  </div>
+                  <div class="checkbox-right">
+                    <div>
+                      <input type="checkbox" id="input-nextJS" />
+                      <label for="input-nextJS">Next JS</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="input-typeScript" />
+                      <label for="input-typeScript">TypeScript</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <label class="title" for="input-blog-image">Upload Image</label>
+                <div class="input-blog-image-group">
+                  <label for="input-blog-image">
+                    <p>Choosen</p>
+                    <i class="fa-solid fa-paperclip"></i>
+                  </label>
+                  <input type="file" id="input-blog-image"  hidden/>
+                </div>
+              </div>
+              <div class="btn-group">
+                <button>Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Project -->
+    <section class="section-content">
+      <h1>MY PROJECT</h1>
+      <div id="contents">
+          <div class="card-content" >
+            <div class="card-content-container">
+              <div class="image-container">
+                <img src="assets/images/post.jpg" alt="" />
+              </div>
+              <h3 class="card-title">Dumbways Mobile App -202</h3>
+              <p class="card-duration">Durasi : 3 bulan</p>
+              <br />
+              <p class="card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex at
+                voluptate rem asperiores earum. Nemo harum delectus natus
+                aspernatur velit maxime in veniam vero, facere voluptate
+                reprehenderit? Consectetur, quae eos.
+              </p>
+              <div class="logo-container">
+                <i class="fa-brands fa-android"></i>
+                <i class="fa-brands fa-java"></i>
+                <i class="fa-brands fa-square-js"></i>
+              </div>
+              <div class="btn-group-card">
+                <button class="btn-edit">Edit</button>
+                <button class="btn-delete">Delete</button>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <script src="js/blog.js"></script>
+  </body>
+</html>

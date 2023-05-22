@@ -1,0 +1,146 @@
+.section-blog {
+  background-color: #ddd;
+}
+.blog {
+  max-width: 1000px;
+  padding: 20px;
+  margin: 50px auto;
+}
+
+.blog-form .form-container form .project-name input,
+.blog-form .form-container form .date-container input,
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 2px 2px #ddd;
+}
+
+.blog-form .form-container form div {
+  margin-top: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.blog-form {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-form .form-container form .project-name input,
+.blog-form .form-container form .date-container input,
+.blog-form .form-container form textarea {
+  width: 100%;
+}
+
+.blog-form .form-container form .title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.blog-form .form-container form .date-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-form .form-container form .date-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-form .form-container form .date-container .start-date {
+  margin-right: 30px;
+}
+
+.blog-form .form-container form .checkbox .checkbox-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10px;
+}
+
+.blog-form .form-container form .input-blog-image-group label {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 1px 2px #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+.blog-form .form-container form .btn-group {
+  display: flex;
+  justify-content: end;
+}
+
+.blog-form .form-container form .btn-group button {
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: black;
+  color: #fff;
+}
+
+.blog-form .form-container form .btn-group button:hover {
+  background-color: rgb(255, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+/* Content Project */
+#contents {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.card-content {
+  width: 300px;
+  box-shadow: 2px 2px 2px 2px #ddd;
+  margin: 30px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card-content .image-container {
+  width: 100%;
+}
+.card-content .image-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-content .card-content-container .logo-container i {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.card-content .card-content-container .btn-group-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card-content .card-content-container .btn-group-card .btn-edit {
+  flex: 1;
+}
+
+.card-content .card-content-container .btn-group-card .btn-delete {
+  flex: 1;
+}
+
+.card-content .card-content-container .btn-group-card button {
+  margin-right: 5px;
+  background-color: black;
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+}
+
+.card-content .card-content-container .btn-group-card button:hover {
+  background-color: rgb(255, 0, 0);
+  cursor: pointer;
+}
