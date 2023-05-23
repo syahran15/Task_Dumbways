@@ -93,7 +93,7 @@ h1 {
 /* Content Project */
 #contents {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
 }
 
 .card-content {
