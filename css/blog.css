@@ -1,4 +1,4 @@
-.section-blog {
+body {
   background-color: #ddd;
 }
 .blog {
@@ -38,11 +38,6 @@ h1 {
 .blog-form .form-container form .title {
   font-size: 18px;
   font-weight: 600;
-}
-
-.blog-form .form-container form .date-container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .blog-form .form-container form .date-container {
@@ -91,9 +86,17 @@ h1 {
 }
 
 /* Content Project */
+#result-blog {
+  background-color: #fff;
+}
+
+.section-content h1 {
+  padding-top: 50px;
+}
+
 #contents {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
 }
 
 .card-content {
@@ -143,4 +146,36 @@ h1 {
 .card-content .card-content-container .btn-group-card button:hover {
   background-color: rgb(255, 0, 0);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1020px) { 
+  #contents {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  form {
+    width: 90%;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+  }
+
+  .blog-form .form-container form .date-container {
+    flex-direction: column;
+  }
+
+  .blog-form .form-container form .date-container .start-date {
+    width: 100%;
+  }
+
+  #contents {
+    display: grid;
+    grid-template-columns: auto;
+  }
 }

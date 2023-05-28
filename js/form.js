@@ -33,3 +33,4 @@ function submitData() {
   a.href = `mailto:${email}?subject=${subject}&body=halo, Hello my name is ${name}, ${message}`;
   a.click()
 }
+

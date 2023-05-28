@@ -51,6 +51,10 @@ nav .nav-left a:hover {
   font-weight: bolder;
 }
 
+nav .nav-left .active {
+  color: orangered;
+}
+
 nav .nav-right a {
   margin-right: 50px;
   background-color: black;
@@ -97,10 +101,9 @@ nav .nav-right a:hover {
 .container .left-card .download {
   display: flex;
   align-items: center;
-
 }
 
-.download a{
+.download a {
   margin-right: 20px;
 }
 
@@ -109,11 +112,10 @@ nav .nav-right a:hover {
   color: #fff;
   padding: 5px 15px;
   border-radius: 15px;
-
 }
 
 .download .btn-contact:hover {
-  background-color:rgb(255, 0, 0);
+  background-color: rgb(255, 0, 0);
 }
 
 .download .fa-download {
@@ -129,3 +131,111 @@ nav .nav-right a:hover {
   margin-right: 20px;
 }
 
+/* Humburger Menu */
+
+#barsmenu {
+  display: none;
+}
+
+.hamburger-nav-container {
+  font-size: 24px;
+  list-style-type: none;
+  display: none;
+}
+
+.hamburger-nav-container a,
+.container-contact-humburger
+ {
+  text-decoration: none;
+  color: #fff;
+  background-color: #9a9a9a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.hamburger-nav-container .btn-contact-humburger {
+  background-color: black;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  width: 10%;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.hamburger-nav-container .hamburger-active,
+.hamburger-nav-container .container-contact-humburger .active 
+{
+  text-decoration: none;
+  color: #fff;
+  background-color: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .left-card {
+    width: 100%;
+  }
+
+  .left-card .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left-card .social-media a i {
+    margin: 10px;
+  }
+
+  #barsmenu {
+    display: flex;
+  }
+
+  .nav-left .collapse {
+    display: none;
+  }
+
+  .nav-right .contact-me {
+    display: none;
+  }
+
+  nav {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  nav .nav-left {
+    margin-left: 0px;
+  }
+
+  .hamburger-nav-container .btn-contact-humburger {
+    width: 20%;
+  }
+
+  @media only screen and (max-width: 720px) {
+    .hamburger-nav-container .btn-contact-humburger {
+      width: 30%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .hamburger-nav-container .btn-contact-humburger {
+      width: 40%;
+    }
+  }
+}

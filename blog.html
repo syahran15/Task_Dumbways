@@ -28,17 +28,40 @@
             ><img src="assets/images/dumbways.png" alt=""
           /></a>
         </div>
-        <ul>
+        <ul class="collapse">
           <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">My Project</a></li>
+          <li><a href="blog.html"  class="active">Blog</a></li>
+          <li><a href="testimonials.html">Testimonial</a></li>
         </ul>
       </div>
-      <div>
-        <ul class="nav-right">
+      <div class="nav-right">
+        <ul class="contact-me">
           <li><a href="form.html">Contact Me</a></li>
         </ul>
       </div>
+
+      <!--  Hamburger Menu Start -->
+      <div class="nav-barsmenu" id="barsmenu">
+        <button
+          style="background-color: transparent; border: none; cursor: pointer"
+          onclick="openHamburger()"
+        >
+          <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <!--  Hamburger Menu End -->
     </nav>
+
+    <!-- Navigation Mobile Start-->
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html">Home</a>
+      <a href="blog.html" class="hamburger-active">Blog</a>
+      <a href="testimonials.html">Testimonial</a>
+      <div class="container-contact-humburger">
+        <a href="form.html" class="btn-contact-humburger">Contact Me</a>
+      </div>
+    </div>
+    <!-- Navigation Mobile Start-->
 
     <!-- Content Form -->
     <section class="section-blog">
@@ -117,38 +140,44 @@
     </section>
 
     <!-- Content Project -->
-    <section class="section-content">
-      <h1>MY PROJECT</h1>
-      <div id="contents">
-          <div class="card-content" >
-            <div class="card-content-container">
-              <div class="image-container">
-                <img src="assets/images/post.jpg" alt="" />
-              </div>
-              <h3 class="card-title">Dumbways Mobile App -202</h3>
-              <p class="card-duration">Durasi : 3 bulan</p>
-              <br />
-              <p class="card-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex at
-                voluptate rem asperiores earum. Nemo harum delectus natus
-                aspernatur velit maxime in veniam vero, facere voluptate
-                reprehenderit? Consectetur, quae eos.
-              </p>
-              <div class="logo-container">
-                <i class="fa-brands fa-android"></i>
-                <i class="fa-brands fa-java"></i>
-                <i class="fa-brands fa-square-js"></i>
-              </div>
-              <div class="btn-group-card">
-                <button class="btn-edit">Edit</button>
-                <button class="btn-delete">Delete</button>
-              </div>
-              <div style="float: right; margin: 10px">
-                <p style="font-size: 15px; color: grey"></p>
+    <section id="result-blog">
+      <div class="section-content">
+        <h1>MY PROJECT</h1>
+        <div id="contents">
+            <div class="card-content" >
+              <div class="card-content-container">
+                <div class="image-container">
+                  <img src="assets/images/post.jpg" alt="" />
+                </div>
+                <h3 class="card-title">Dumbways Mobile App -202</h3>
+                <p class="card-duration">Durasi : 3 bulan</p>
+                <br />
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex at
+                  voluptate rem asperiores earum. Nemo harum delectus natus
+                  aspernatur velit maxime in veniam vero, facere voluptate
+                  reprehenderit? Consectetur, quae eos.
+                </p>
+                <div class="logo-container">
+                  <i class="fa-brands fa-android"></i>
+                  <i class="fa-brands fa-java"></i>
+                  <i class="fa-brands fa-square-js"></i>
+                </div>
+                <div class="btn-group-card">
+                  <button class="btn-edit">Edit</button>
+                  <button class="btn-delete">Delete</button>
+                </div>
+                <div style="float: right; margin: 10px">
+                  <p style="font-size: 15px; color: grey"></p>
+                </div>
               </div>
             </div>
-          </div>
+        
+      </div>
     </section>
+
+
     <script src="js/blog.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

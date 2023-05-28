@@ -21,19 +21,45 @@
     <nav>
       <div class="nav-left">
         <div class="logo">
-          <a href="#"><img src="assets/images/dumbways.png" alt="" /></a>
+          <a href="index.html"
+            ><img src="assets/images/dumbways.png" alt=""
+          /></a>
         </div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">My Project</a></li>
+        <ul class="collapse">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="testimonials.html">Testimonial</a></li>
         </ul>
       </div>
-      <div>
-        <ul class="nav-right">
+      <div class="nav-right">
+        <ul class="contact-me">
           <li><a href="form.html">Contact Me</a></li>
         </ul>
       </div>
+
+      <!--  Hamburger Menu Start -->
+      <div class="nav-barsmenu" id="barsmenu">
+        <button
+          style="background-color: transparent; border: none; cursor: pointer"
+          onclick="openHamburger()"
+        >
+          <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <!--  Hamburger Menu End -->
     </nav>
+
+    <!-- Navigation Mobile Start-->
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html" class="hamburger-active">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="testimonials.html">Testimonial</a>
+      <div class="container-contact-humburger">
+        <a href="form.html" class="btn-contact-humburger">Contact Me</a>
+      </div>
+    </div>
+    <!-- Navigation Mobile Start-->
+
     <section>
       <div class="container">
         <div class="left-card">
@@ -50,7 +76,7 @@
             </p>
           </div>
           <div class="download">
-            <a class="btn-contact" href="">Contact</a>
+            <a class="btn-contact" href="form.html">Contact</a>
             <p>donwload CV</p>
             <a href=""><i class="fa-solid fa-download"></i></a>
           </div>
@@ -73,12 +99,14 @@
         </div>
         <div class="right-card">
           <div class="card-profile">
-            <img src="assets/images/profile3.JPG" alt="" />
+            <a href=""></a><img src="assets/images/profile3.JPG" alt="" />
             <h3>Ahmad Syahran Zidane</h3>
             <p>Fullstack Developer</p>
           </div>
         </div>
       </div>
     </section>
+
+    <script src="js/index.js"></script>
   </body>
 </html>

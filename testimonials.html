@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/testimonials.css" />
+
+      <!-- Font awesome -->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <title>Testimonial</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="assets/images/dumbways.png" alt=""
+          /></a>
+        </div>
+        <ul class="collapse">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="testimonials.html" class="active" >Testimonial</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul class="contact-me">
+          <li><a href="form.html">Contact Me</a></li>
+        </ul>
+      </div>
+
+      <!--  Hamburger Menu Start -->
+      <div class="nav-barsmenu" id="barsmenu">
+        <button
+          style="background-color: transparent; border: none; cursor: pointer"
+          onclick="openHamburger()"
+        >
+          <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <!--  Hamburger Menu End -->
+    </nav>
+
+    <!-- Navigation Mobile Start-->
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="testimonials.html"  class="hamburger-active">Testimonial</a>
+      <div class="container-contact-humburger">
+        <a href="form.html" class="btn-contact-humburger">Contact Me</a>
+      </div>
+    </div>
+    <!-- Navigation Mobile Start-->
+
+    <div class="container">
+      <h1>My Testimonials</h1>
+      <section class="testimonials" id="testimonials">
+        <div class="testimonial">
+          <img
+            src="assets/images/profile/profile.png"
+            alt=""
+            class="profile-testimonial"
+          />
+          <p class="quote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget
+            lectus eu libero venenatis gravida eget vel odio.
+          </p>
+          <p class="author">- Abel Dustin</p>
+        </div>
+
+        <div class="testimonial">
+          <img
+            src="assets/images/profile/profile.png"
+            alt=""
+            class="profile-testimonial"
+          />
+          <p class="quote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget
+            lectus eu libero venenatis gravida eget vel odio.
+          </p>
+          <p class="author">- Abel Dustin</p>
+        </div>
+
+        <div class="testimonial">
+          <img
+            src="assets/images/profile/profile.png"
+            alt=""
+            class="profile-testimonial"
+          />
+          <p class="quote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget
+            lectus eu libero venenatis gravida eget vel odio.
+          </p>
+          <p class="author">- Abel Dustin</p>
+        </div>
+        
+      </section>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/testimonials.js"></script>
+  </body>
+</html>

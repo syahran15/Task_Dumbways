@@ -11,7 +11,6 @@ function addBlog(event) {
 
   // fitur durasi
 
-
   let distance = endDate - startDate; // hasilnya milidetik
   console.log(distance);
 
@@ -23,7 +22,7 @@ function addBlog(event) {
 
   let distanceDay = Math.floor(
     distance / (milisecond * secondInHours * hoursInDays)
-  ); 
+  );
   let distanceMonth = Math.floor(
     distance / (milisecond * secondInHours * hoursInDays * daysInMonth)
   );
@@ -32,18 +31,30 @@ function addBlog(event) {
       (milisecond * secondInHours * hoursInDays * daysInMonth * monthInYear)
   );
 
+  // menampilkan date
+let realDate = "";
+
+if (distanceDay < 31) {
+  realDate = `${distanceDay} hari`;
+} else if (distanceDay >= 31) {
+  realDate = `${distanceMonth} bulan ${distanceDay % 30} hari`;
+} else if (distanceMonth >= 12) {
+  realDate = `${distanceYear} tahun ${distanceMonth % 12} bulan ${distanceDay % 30} hari`;
+} else {
+  realDate = "Kamu salah input";
+}
+
+console.log(`Durasi: ${realDate}`);
+
   //untuk menampilkan gambar
   image = URL.createObjectURL(image[0]);
   console.log(image);
 
   let blog = {
     projectName,
-    distanceDay,
-    distanceMonth,
-    distanceYear,
+    realDate,
     description,
-    distance,
-    realTime : new Date(),
+    realTime: new Date(),
     image,
   };
 
@@ -52,6 +63,8 @@ function addBlog(event) {
 
   renderBlog();
 }
+
+//Card Post
 
 function renderBlog() {
   //untuk menghilangkan post yang pertama
@@ -66,7 +79,7 @@ function renderBlog() {
                 <img src="${dataBlog[index].image}" alt="blog_img" />
               </div>
               <h3 class="card-title">${dataBlog[index].projectName}</h3>
-              <p class="card-duration">Durasi : ${dataBlog[index].distanceDay} Day , ${dataBlog[index].distanceMonth} Month , ${dataBlog[index].distanceYear} Year </p>
+              <p class="card-duration">${dataBlog[index].realDate}</p>
               <br />
               <p class="card-description">
                 ${dataBlog[index].description}
@@ -81,7 +94,9 @@ function renderBlog() {
                 <button class="btn-delete">Delete</button>
               </div>
               <div style="float: right; margin: 10px">
-              <p style="font-size: 15px; color: grey">${getRealTime(dataBlog[index].realTime)}</p>
+              <p style="font-size: 15px; color: grey">${getRealTime(
+                dataBlog[index].realTime
+              )}</p>
             </div>
             </div>
           </div>
@@ -89,36 +104,38 @@ function renderBlog() {
   }
 }
 
-function getFullTime(time) {
-  let monthName = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Desc",
-  ];
+// Membaut
 
-  let date = time.getDate();
-  let monthIndex = time.getMonth();
-  let year = time.getFullYear();
-  let hours = time.getHours();
-  let minutes = time.getMinutes();
+// function getFullTime(time) {
+//   let monthName = [
+//     "Jan",
+//     "Feb",
+//     "Mar",
+//     "Apr",
+//     "May",
+//     "Jun",
+//     "Jul",
+//     "Aug",
+//     "Sep",
+//     "Oct",
+//     "Nov",
+//     "Desc",
+//   ];
 
-  if (hours <= 9) {
-    hours = "0" + hours;
-  } else if (minutes <= 9) {
-    minutes = "0" + minutes;
-  }
+//   let date = time.getDate();
+//   let monthIndex = time.getMonth();
+//   let year = time.getFullYear();
+//   let hours = time.getHours();
+//   let minutes = time.getMinutes();
 
-  return `${date} ${monthName[monthIndex]} ${year} ${hours} : ${minutes} WIB`;
-}
+//   if (hours <= 9) {
+//     hours = "0" + hours;
+//   } else if (minutes <= 9) {
+//     minutes = "0" + minutes;
+//   }
+
+//   return `${date} ${monthName[monthIndex]} ${year} ${hours} : ${minutes} WIB`;
+// }
 
 function getRealTime(time) {
   let timeNow = new Date();
