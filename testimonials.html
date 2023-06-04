@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/testimonials.css" />
 
-      <!-- Font awesome -->
-      <link
+    <!-- Font awesome -->
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
+
     <title>Testimonial</title>
   </head>
   <body>
@@ -29,7 +29,7 @@
         <ul class="collapse">
           <li><a href="index.html">Home</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="testimonials.html" class="active" >Testimonial</a></li>
+          <li><a href="testimonials.html" class="active">Testimonial</a></li>
         </ul>
       </div>
       <div class="nav-right">
@@ -54,7 +54,7 @@
     <div class="hamburger-nav-container" id="hamburger-nav-container">
       <a href="index.html">Home</a>
       <a href="blog.html">Blog</a>
-      <a href="testimonials.html"  class="hamburger-active">Testimonial</a>
+      <a href="testimonials.html" class="hamburger-active">Testimonial</a>
       <div class="container-contact-humburger">
         <a href="form.html" class="btn-contact-humburger">Contact Me</a>
       </div>
@@ -63,10 +63,31 @@
 
     <div class="container">
       <h1>My Testimonials</h1>
+      <div>
+        <h2>Rating By Stars</h2>
+        <div>
+          <button class="rating-btn" onclick="getAllTestimonials()">All</button>
+          <button class="rating-btn" onclick="getFilteredTestimonials(1)">
+            1 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="getFilteredTestimonials(2)">
+            2 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="getFilteredTestimonials(3)">
+            3 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="getFilteredTestimonials(4)">
+            4 <i class="fa-solid fa-star"></i>
+          </button>
+          <button class="rating-btn" onclick="getFilteredTestimonials(5)">
+            5 <i class="fa-solid fa-star"></i>
+          </button>
+        </div>
+      </div>
       <section class="testimonials" id="testimonials">
-        <div class="testimonial">
+        <!-- <div class="testimonial">
           <img
-            src="assets/images/profile/profile.png"
+            src="assets/images/profile3.jpg"
             alt=""
             class="profile-testimonial"
           />
@@ -79,7 +100,7 @@
 
         <div class="testimonial">
           <img
-            src="assets/images/profile/profile.png"
+            src="assets/images/profile3.jpg"
             alt=""
             class="profile-testimonial"
           />
@@ -92,7 +113,7 @@
 
         <div class="testimonial">
           <img
-            src="assets/images/profile/profile.png"
+            src="assets/images/profile3.jpg"
             alt=""
             class="profile-testimonial"
           />
@@ -101,12 +122,11 @@
             lectus eu libero venenatis gravida eget vel odio.
           </p>
           <p class="author">- Abel Dustin</p>
-        </div>
-        
+        </div> -->
       </section>
     </div>
 
     <script src="js/index.js"></script>
-    <script src="js/testimonials.js"></script>
+    <script src="js/ajax.js"></script>
   </body>
 </html>
